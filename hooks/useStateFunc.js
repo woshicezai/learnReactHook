@@ -5,6 +5,9 @@ function getCountF (){
     return Math.random().toFixed(2);
 }
 export default function useStateFunction(){
+    /**
+     * 写成函数形式，仅在第一次运行，后面更新都不会运行了
+     */
     const [count, setCount] = useState(getCountF);
 
     return (
